@@ -1,3 +1,5 @@
+laravel minimum 8.1
+
 
 open terminal
 
