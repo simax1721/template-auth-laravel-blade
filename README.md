@@ -9,6 +9,8 @@ copy file .env.example
 
 rename to .env
 
+type => composer update
+
 type => php artisan key:generate
 
 type => php artisan migrate
