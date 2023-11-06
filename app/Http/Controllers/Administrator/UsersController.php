@@ -43,7 +43,7 @@ class UsersController extends Controller
             'username' => $request->username,
             'email' => $request->email,
             'userroles_id' => $request->userroles_id,
-            'password' => Hash::make('password123'),
+            'password' => Hash::make('jurnal123'),
         ]);
 
         return redirect('administrator/users')->with('success', 'Data telah ditambahkan');
@@ -67,7 +67,7 @@ class UsersController extends Controller
 
     function resetpass($id)
     {
-        $pass = 'jurnalsyariah123';
+        $pass = 'jurnal123';
 
         User::find($id)->update /* $data = */([
             'password' => Hash::make($pass),
